@@ -1,0 +1,8 @@
+<launch>
+    <include file="$(find probot_vision)/launch/usb_cam.launch" />
+    
+    <node name="visionManager" pkg="probot_vision" type="visonManager" output="screen" />
+    
+    <!--node name="dobot_to_cameral" pkg="tf" type="static_transform_publisher" 
+    args="0.0 0.0 0.0 0.0 0.0 0.0 /dobot_base /cameral_base 40 " /-->
+</launch>
